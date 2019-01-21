@@ -3,12 +3,37 @@
 go version
 go run xxx
 go build xxx
+go fmt
+go doc
+go install
+go fix
+go test 
 
 import runtime
 runtime.Version()
 
 $GOROOT
 /usr/lib/go
+
+注释
+//
+/*  */
+
+包
+package main
+
+类型
+int, float, bool, string
+struct, array, slice, map, channel
+interface
+函数的返回类型
+
+type IZ int
+
+函数
+func functionName(p1 type1, p2 type2) (ret1 type1, ret2 type2) {
+}
+
 
 
 ```
@@ -28,3 +53,5 @@ func main() {
 $GOROOT/src/runtime
 
 Go 的可执行文件都比相对应的源代码文件要大很多，这恰恰说明了 Go 的 runtime 嵌入到了每一个可执行文件当中。Go 不需要依赖任何其它文件，它只需要一个单独的静态文件，这样你也不会像使用其它语言一样在各种不同版本的依赖文件之间混淆。
+
+## Go程序的一般结构
