@@ -1,3 +1,12 @@
+```python
+# os
+os.environ['PATH']
+# dir
+dir(xxx)
+
+getattr(o, key)
+
+```
 ## 格式限定符
 
 format有着丰富的的“格式限定符”（语法是{}中带:号） 
