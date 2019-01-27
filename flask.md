@@ -2,6 +2,7 @@
 ```bash
 pip install flask
 pip install flask-script
+pip2 install Flask-SQLAlchemy
 ```
 
 ## app

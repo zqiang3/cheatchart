@@ -5,6 +5,7 @@ os.environ['PATH']
 dir(xxx)
 
 getattr(o, key)
+hasattr(o, key)
 
 ```
 ## 格式限定符
@@ -74,3 +75,8 @@ dic = {'a':31, 'bc':5, 'c':3, 'asd':4, 'aa':74, 'd':0}
 dict= sorted(dic.iteritems(), key=lambda d:d[0]) d[0]表示字典的键
 ```
 
+# repr
+'p is {0!r}'.format(p)  # !r格式化代码指明输出使用repr()来代替默认的str()
+
+# eval
+eval(repr(o))
