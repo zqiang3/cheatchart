@@ -46,6 +46,27 @@ print '{0.x!r}, {0.y!r}'.format(p)
 ```
 
 
+# format
+```python
+class Date:
+    def __init__(self, year, month, day):
+        self.year = year
+        self.month = month
+        self.day = day
+
+    def __format__(self, code):
+        if code == 'ymd':
+            return '{0.year}-{0.month}-{0.day}'.format(self)
+        else:
+            return 'invalid code'
+
+
+d = Date(2018, 1, 28)
+print format(d, 'ymd')
+print '{:ymd}'.format(d)
+```
+
+
 
 # set
 
