@@ -33,6 +33,18 @@ print '{:d}'.format(15)
 print '{:,}'.format(1234567)
 ```
 
+```python
+class Pair:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+p = Pair(3, 5)
+print '{0.x!r}, {0.y!r}'.format(p)
+# 0.x表示第一个位置参数的x属性
+# !r格式化代码指明输出使用repr()来代替默认的str()
+```
+
 
 
 # set
