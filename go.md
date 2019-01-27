@@ -1,5 +1,5 @@
 ## reference
-```
+```go
 go version
 go run xxx
 go build xxx
@@ -35,7 +35,6 @@ func functionName(p1 type1, p2 type2) (ret1 type1, ret2 type2) {
 }
 
 
-
 ```
 
 ## hello, world
@@ -55,3 +54,36 @@ $GOROOT/src/runtime
 Go 的可执行文件都比相对应的源代码文件要大很多，这恰恰说明了 Go 的 runtime 嵌入到了每一个可执行文件当中。Go 不需要依赖任何其它文件，它只需要一个单独的静态文件，这样你也不会像使用其它语言一样在各种不同版本的依赖文件之间混淆。
 
 ## Go程序的一般结构
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+const c = "C"
+var v int = 5
+type T struct{
+
+}
+
+func init() {
+
+}
+
+func main() {
+    var a int
+    Func1()
+    fmt.Println(a)
+}
+
+func (t T) Method1() {
+
+}
+
+func Func1() {
+
+}
+```
+
